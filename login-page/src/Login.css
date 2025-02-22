@@ -1,0 +1,82 @@
+/* Background with animated gradient */
+/* Footer Styling */
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+.login-footer {
+  height: 1vh;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  color: rgb(5, 1, 10);
+  font-size: 9px;
+  font-weight: bold;
+}
+
+.login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-size: 400% 400%;
+    animation: gradientAnimation 8s ease infinite;
+  }
+  
+  /* Smooth background color transitions */
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  /* Login Box Design */
+  .login-box {
+    background: rgb(249, 249, 248);
+    padding: 20px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border: 2px solid #f5f4f4;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+  }
+
+  .login-logo {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 15px;
+  }
+  
+  .heading
+  {
+    color: rgb(21, 21, 103);
+  }
+  .log
+  {
+    background-color: rgb(32, 17, 108);
+    color: rgb(255, 240, 243);
+    width: 30;
+  }
+  .pass
+  {
+    color: rgb(31, 9, 63);
+    font-size:16px;
+  }
+  .user{
+    color: rgb(33, 12, 63);
+    font-size:16px; 
+  }
+  .contain
+  {
+      background-color: rgb(204, 236, 249);
+  }
+  .cards{
+
+      background: rgba(255, 255, 255, 0.2); /* White with 20% opacity */
+      backdrop-filter: blur(10px); /* Adds a blur effect */
+      border: 1px solid rgba(255, 255, 255, 0.3); /* Light border */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+      border-radius: 10px;
+      padding: 20px;
+    }
+  
