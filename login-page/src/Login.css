@@ -9,9 +9,10 @@
   width: 100%;
   text-align: center;
   color: rgb(5, 1, 10);
-  font-size: 9px;
+  font-size: 12px;
   font-weight: bold;
 }
+
 
 .login-container {
     height: 100vh;
@@ -51,11 +52,13 @@
   {
     color: rgb(21, 21, 103);
   }
-  .log
+  .logs
   {
     background-color: rgb(32, 17, 108);
     color: rgb(255, 240, 243);
     width: 30;
+   
+  
   }
   .pass
   {
@@ -78,5 +81,13 @@
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
       border-radius: 10px;
       padding: 20px;
+    }
+    .login-button
+    {
+      background-color: #b1cf08;
+    }
+
+    .card{
+      height: 480px;
     }
   

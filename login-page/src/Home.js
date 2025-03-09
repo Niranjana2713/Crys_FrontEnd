@@ -14,7 +14,7 @@ const Home = () => {
        {/* Top Bar */}
    
        <div className="top-bar">    
-        <i className="bi bi-search" style={{ color: "black", marginRight: "5px",fontSize: "15px", color: "rgb(6, 41, 64)" }}></i>
+        <i className="bi bi-search" style={{ color: "black", marginRight: "5px", fontSize: "15px" }}></i>
        <i className="bi bi-chevron-down" style={{ color: "black", marginRight: "25px" }}></i>
           <input
             type="text"
@@ -29,7 +29,7 @@ const Home = () => {
       {/* Sidebar */}
       <div
         className={`sidebar ${isExpanded ? "expanded" : ""}`}
-        
+        onClick={() => setIsExpanded(!isExpanded)}
       >
         <ul className="list-unstyled">
         

@@ -1,0 +1,146 @@
+/* Container to center everything */
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+/* Logo styling */
+.logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 100px; /* Adjust size */
+}
+/* Flex container for cards */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Space between cards */
+    margin-top: 80px;
+}
+.add-button{
+   
+    margin-left: 950px;
+    margin-top: -20px;
+}
+/* Card styling */
+.name {
+    width: 250px;   
+    margin-top: -55px;
+    height: 80px;
+    background-color:#082645;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight:400;
+    color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Table container */
+.table-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Table styling */
+table {
+    width: 80%;
+    border-collapse: collapse;
+    background-color: white;
+  
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Table headers */
+th {
+    background-color: #072c52;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+
+
+/* Table rows */
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Alternating row colors */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+tr{
+    justify-content: center;
+}
+tbody{
+   
+    text-align: center;
+}
+thead{
+    text-align: center;
+}
+/* Table header containing the button */
+.table-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.table-head {
+    text-align: center;
+    flex-grow: 1; /* Pushes the button to the right */
+    font-size: 20px;
+    font-weight:600;
+    color: #333;
+    margin-top: 40px;
+}
+
+/* Position the button at the right corner */
+.add-ticket-button {
+    position: absolute;
+    margin-left: 900px;
+    margin-top: 30px;
+    background-color: #072c52;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+.add-ticket-button:hover {
+    background-color:#072c52;
+}
+th{
+    text-align: center;
+    border-color: #ddd;
+     font-weight:600;
+
+}
+
+.count-number {
+    font-weight: bold;
+    color: #f7f9fb; /* Blue for Total */
+    font-size: 18px;
+    margin-left: 5px;
+  }
+  
+  .card.name:nth-child(2) .count-number {
+    color: #f4f8f5; /* Green for Closed Tickets */
+  }
+  
+  .card.name:nth-child(3) .count-number {
+    color: #faf9f5; /* Yellow for In-Progress Tickets */
+  }
+  

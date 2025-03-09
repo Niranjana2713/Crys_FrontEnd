@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 150px;
+}
+
+.table-head {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    text-align: center;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Two-column layout */
+.ticket-form {
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+/* Column styling */
+.form-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    gap: -10px;
+}
+
+/* Label adjustments */
+.form-group label {
+    font-weight: bold;
+    width: 180px; /* Set fixed width for perfect alignment */
+    text-align: left; /* Ensures all labels align properly */
+    color: #555;
+    white-space: nowrap; /* Prevents wrapping */
+}
+
+/* Adjust input width */
+.form-group input {
+    flex: unset; /* Removes flexible width */
+    width: 350px; /* Set a fixed smaller width */
+    padding: 9px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+h4{
+    font-weight: 600;
+}
+
+.login-footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 12px;
+    color: #777;
+}
+.button-container {
+    position: relative; /* Parent container */
+    width: 100%;
+    margin-top: 70px;
+    height: 50px; /* Keeps buttons aligned properly */
+}
+
+/* Button Styling */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    background-color: #210d6c;
+    color: #fff;
+    position: absolute;
+}
+
+/* Positioning buttons */
+.back {
+    left: 0; /* Moves to left corner */
+    background-color: #210d6c;
+    margin-top: 30px;
+}
+
+.save {
+    left: 50%;
+    transform: translateX(-50%); /* Moves button to center */
+    background-color: #28a745;
+    margin-top: 30px;
+}
+
+.cancel {
+    right: 0; /* Moves to right corner */
+    background-color: #6c757d;
+    margin-top: 30px;
+}
+
+/* Hover Effects */
+.back:hover {
+    background-color: #1a0952;
+}
+
+.save:hover {
+    background-color: #218838;
+}
+
+.cancel:hover {
+    background-color: #5a6268;
+}
+
+/* Responsive Design: Adjusts layout for small screens */
+@media (max-width: 768px) {
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 10px;
+        
+    }
+
+    .btn {
+        position: static;
+        transform: none;
+        width: 100%;
+        text-align: center;
+        
+    }
+}
+
+
